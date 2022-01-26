@@ -1,0 +1,13 @@
+Vatsal@DELL-VATSAL MINGW64 ~
+$ ping georgebrown.ca
+
+Pinging georgebrown.ca [99.79.139.11] with 32 bytes of data:
+Reply from 99.79.139.11: bytes=32 time=23ms TTL=47
+Reply from 99.79.139.11: bytes=32 time=21ms TTL=47
+Reply from 99.79.139.11: bytes=32 time=22ms TTL=47
+Reply from 99.79.139.11: bytes=32 time=28ms TTL=47
+
+Ping statistics for 99.79.139.11:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 21ms, Maximum = 28ms, Average = 23ms

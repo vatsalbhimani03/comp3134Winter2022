@@ -1,0 +1,49 @@
+[1]
+IPv4 address for www.fido.com
+ IP: 23.227.38.74
+ Country:  Canada
+ State: Ontario
+ City: Ottawa
+ Latitude: 45.4188
+ Longitude: -75.6965
+ ISP: Shopify Inc.
+
+[2]
+IPv4 address for www.freedom.com
+ IP: 205.178.189.131
+ Country:  United States of America
+ State: Florida
+ City: Jacksonville
+ Latitude: 30.1910
+ Longitude: -81.4931
+ ISP: Network Solutions LLC
+
+[3]
+IPv4 address for www.rogers.com
+ IP: 23.73.249.71
+ Country:  United States of America
+ State: New Jersey
+ City: Edison
+ Latitude: 40.5187
+ Longitude: -74.4121
+ ISP: Akamai Technologies Inc.
+
+[4]
+IPv4 address for www.koodo.com
+ IP: 107.162.230.23
+ Country:  United States of America
+ State: Washington
+ City: Seattle
+ Latitude: 47.6024
+ Longitude: -122.3259
+ ISP: Defense.net Inc
+
+[5]
+IPv4 address for www.chatrwireless.com
+ IP: 104.100.136.248
+ Country:  United States of America
+ State: Georgia
+ City: Lithia Springs
+ Latitude: 33.7939
+ Longitude: -84.6604
+ ISP: Akamai Technologies Inc.
