@@ -1,0 +1,155 @@
+3. Print Captured Packets in ASCII
+# tcpdump -A -i eth0
+
+root@comp3134-winter-2022-intro-to-cyber-security:~# tcpdump -A -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+21:18:57.835623 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 2967637369:2967637477, ack 2047498925, win 501, length 108
+E....z@.@....z'cc.n........yz
+Z.P....J...,-..(.....K],.@?.~..nsHh r......@@.9+...i.E.&^AX.y..!.J....u.R.!o..l.....P....]..bl/Nk;[L=....]..O..z..).s.
+21:18:57.835759 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 108:144, ack 1, win 501, length 36
+E..L.{@.@..].z'cc.n.........z
+Z.P........Z@k.Sf.%k.%..W,......s.+.1fB.P.I...
+21:18:57.835875 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 144:252, ack 1, win 501, length 108
+E....|@.@....z'cc.n........     z
+Z.P....J........c...A....K.\.A#.."T.&O....O...UPi&.W.\...R..k..3.sa...4....u@E.....rj....P......^..,Ww.......z2:......
+21:18:57.835973 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 252:288, ack 1, win 501, length 36
+E..L.}@.@..[.z'cc.n........uz
+Z.P...........  P.].Z.<...1...-...s..$...5.jq..
+21:18:57.837217 IP comp3134-winter-2022-intro-to-cyber-security.52471 > 67.207.67.3.domain: 55279+ [1au] PTR? 234.110.252.99.in-addr.arpa. (56)
+E..TP]@.@....z'cC.C....5.@5..............234.110.252.99.in-addr.arpa.......)........
+21:18:57.837391 IP comp3134-winter-2022-intro-to-cyber-security.55037 > 67.207.67.3.domain: 24967+ [1au] PTR? 234.110.252.99.in-addr.arpa. (56)
+E..TP^@.@....z'cC.C....5.@5.a............234.110.252.99.in-addr.arpa.......)........
+21:18:57.838206 IP comp3134-winter-2022-intro-to-cyber-security.41459 > 67.207.67.3.domain: 32401+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+E..SP_@.@....z'cC.C....5.?5.~............99.39.122.134.in-addr.arpa.......)........
+21:18:57.838339 IP comp3134-winter-2022-intro-to-cyber-security.53505 > 67.207.67.3.domain: 49775+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+E..SP`@.@....z'cC.C....5.?5..o...........99.39.122.134.in-addr.arpa.......)........
+21:18:57.838512 IP comp3134-winter-2022-intro-to-cyber-security.35982 > 67.207.67.3.domain: 50421+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+E..SPa@.@....z'cC.C....5.?5..............99.39.122.134.in-addr.arpa.......)........
+21:18:57.838659 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.55037: 24967 1/0/1 PTR cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com. (125)
+E.....@.?.x.C.C..z'c.5......a............234.110.252.99.in-addr.arpa................9.cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com...)........
+21:18:57.838708 IP comp3134-winter-2022-intro-to-cyber-security > 67.207.67.3: ICMP comp3134-winter-2022-intro-to-cyber-security udp port 55037 unreachable, length 161
+E...w)..@....z'cC.C...2C....E.....@.?.x.C.C..z'c.5......a............234.110.252.99.in-addr.arpa................9.cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com...)........
+21:18:57.838748 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.52471: 55279 1/0/1 PTR cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com. (125)
+E.....@.?.x.C.C..z'c.5....0i.............234.110.252.99.in-addr.arpa................9.cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com...)........
+21:18:57.838767 IP comp3134-winter-2022-intro-to-cyber-security > 67.207.67.3: ICMP comp3134-winter-2022-intro-to-cyber-security udp port 52471 unreachable, length 161
+E...w*..@....z'cC.C...2C....E.....@.?.x.C.C..z'c.5....0i.............234.110.252.99.in-addr.arpa................9.cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com...)........
+21:18:57.838900 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.35982: 50421 NXDomain 0/1/1 (122)
+E.....@.?.x.C.C..z'c.5.....#.............99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.......)........
+21:18:57.838900 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.53505: 49775 NXDomain 0/1/1 (122)
+E.....@.?.x.C.C..z'c.5.....6.o...........99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.......)........
+21:18:57.839072 IP comp3134-winter-2022-intro-to-cyber-security.35982 > 67.207.67.3.domain: 50421+ PTR? 99.39.122.134.in-addr.arpa. (44)
+E..HPb@.@....z'cC.C....5.44..............99.39.122.134.in-addr.arpa.....
+21:18:57.839121 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.41459: 32401 NXDomain 0/1/1 (122)
+E.....@.?.x.C.C..z'c.5..../#~............99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.......)........
+21:18:57.839225 IP comp3134-winter-2022-intro-to-cyber-security.53505 > 67.207.67.3.domain: 49775+ PTR? 99.39.122.134.in-addr.arpa. (44)
+E..HPc@.@....z'cC.C....5.44..o...........99.39.122.134.in-addr.arpa.....
+21:18:57.839284 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.35982: 50421 NXDomain 0/1/0 (111)
+E.....@.?.x.C.C..z'c.5...w.d.............99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.....
+21:18:57.839415 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.53505: 49775 NXDomain 0/1/0 (111)
+E.....@.?.x.C.C..z'c.5...w.v.o...........99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.....
+21:18:57.839471 IP comp3134-winter-2022-intro-to-cyber-security.41459 > 67.207.67.3.domain: 32401+ PTR? 99.39.122.134.in-addr.arpa. (44)
+E..HPd@.@....z'cC.C....5.44.~............99.39.122.134.in-addr.arpa.....
+21:18:57.839709 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.41459: 32401 NXDomain 0/1/0 (111)
+E.....@.?.x.C.C..z'c.5...w1c~............99.39.122.134.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..a..i..*0.....       :.....
+21:18:57.840377 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 288:532, ack 1, win 501, length 244
+E....~@.@....z'cc.n.........z
+Z.P.......^"S.m....?......7]..@.."'....B.YR.H...V~tI(... .......[.\s....6...pQ..*...l/"I....f.[gq........+W     .....ZVA.u........M..G.c._..
+...........}..qz....w........(.../..@..DP...$.T..gN+3Hc..V.o^hO.kY..{[...Pn\...O.....8......2..rG
+WP....:.....s.?....
+21:18:57.840491 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 532:568, ack 1, win 501, length 36
+E..L..@.@..Y.z'cc.n.........z
+Z.P.......O[....G...}.qbeh.^N..4w....W.G...g&E
+21:18:57.840608 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 568:636, ack 1, win 501, length 68
+E..l..@.@..8.z'cc.n.........z
+Z.P...."....    .cr...k.....[..A...5.....d.U..'?...(.~....}.o[.....l...`.D.......
+21:18:57.840702 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 636:672, ack 1, win 501, length 36
+E..L..@.@..W.z'cc.n.........z
+Z.P.......8#.z^...9W..B..Jo#.G..u.)}....../..
+21:18:57.840810 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 672:828, ack 1, win 501, length 156
+E.....@.@....z'cc.n.........z
+Z.P....z..u.....2B..,.i..~.c.....Bl.#m....).>.=.b...6....{
+..O.n.....m..   ).X.*1....p....l.q..X...MH."q........m.#~..]...2XP.GA..^).W_PB..@y"..G.K......@Gk7.;..ymp...:
+21:18:57.842559 IP comp3134-winter-2022-intro-to-cyber-security.59433 > 67.207.67.3.domain: 33152+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+E..QPe@.@....z'cC.C..).5.=4..............3.67.207.67.in-addr.arpa.......)........
+21:18:57.842754 IP comp3134-winter-2022-intro-to-cyber-security.55207 > 67.207.67.3.domain: 59581+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+E..QPf@.@....z'cC.C....5.=4..............3.67.207.67.in-addr.arpa.......)........
+21:18:57.842820 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.59433: 33152 NXDomain 0/1/1 (120)
+E.....@.?.x.C.C..z'c.5.)...7.............3.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+21:18:57.842930 IP comp3134-winter-2022-intro-to-cyber-security.50320 > 67.207.67.3.domain: 25045+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+E..QPg@.@....z'cC.C....5.=4.a............3.67.207.67.in-addr.arpa.......)........
+21:18:57.842956 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.55207: 59581 NXDomain 0/1/1 (120)
+E.....@.?.x.C.C..z'c.5....(|.............3.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+21:18:57.843179 IP comp3134-winter-2022-intro-to-cyber-security.59433 > 67.207.67.3.domain: 33152+ PTR? 3.67.207.67.in-addr.arpa. (42)
+E..FPh@.@....z'cC.C..).5.24..............3.67.207.67.in-addr.arpa.....
+21:18:57.843276 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.50320: 25045 NXDomain 0/1/1 (120)
+E.....@.?.x
+C.C..z'c.5.....{a............3.67.207.67.in-addr.arpa................7.ns1.digitalocean.com.
+hostmaster..Y.. ..*0.....       :.......)........
+21:18:57.843336 IP comp3134-winter-2022-intro-to-cyber-security.55207 > 67.207.67.3.domain: 59581+ PTR? 3.67.207.67.in-addr.arpa. (42)
+E..FPi@.@....z'cC.C....5.24..............3.67.207.67.in-addr.arpa.....
+21:18:57.843437 IP comp3134-winter-2022-intro-to-cyber-security.50320 > 67.207.67.3.domain: 25045+ PTR? 3.67.207.67.in-addr.arpa. (42)
+E..FPj@.@....z'cC.C....5.24.a............3.67.207.67.in-addr.arpa.....
+21:18:57.850926 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 108, win 510, length 0
+E..(7.@.y.Iuc.n..z'c....z
+Z.....P...Pb........
+21:18:57.850982 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 828:3748, ack 1, win 501, length 2920
+E.....@.@....z'cc.n.........z
+Z.P....F..I.s.7q.`T..}^...];5...
+..w.."3 ..E.$9.W.....fB.J{$o..\\.W.|... E/..z...O......7
+#..%..X..|....1.....#..Q...*..8.....".%.rD+2O...Y.Mz..g%C....j\........m
+FMg..&.O..}.d........ye..e.Sq8.n.E.)M._.@...... .z.u..........-nvE..j).......h(......k..m."m.Q..N2g..IuSo..I...|...x.u.Y..^.x..,.I..*.X.@.D
+Wc..e.)H7.......        ...|..........F\.....d5....&....l2]..3..c..oJL.W....%.VN.i(.if....\...Uk..@rxE...d....M.G.ZL. V...5..4.p/Vjh.....2i..-.......,.9P..r.G.e|/&..;......M(..r...}a...K...s...._.^...8..."...3.
+.....7..*2.U}.!...>U..3.V...j]......o.............K.{..@.........>3..Z{.vO..    ....Ki9.S.S.2Fy.....D..aefnc.o.2.?.0_.G....
+.......
+r83B.|..........*.'.@.}|.._3|..;.do..h+...J.D*].Qw...--67}..._o}W/*.....pG...OX@%(|..|....%1a`q9%.jz.v...tlK.*3y.U.ac...`=......N..1.\e.II..8.urNc.."8.........%..%..T......D.e..>..;o....*.Ino...[%.Z....I..-.zN..V-..).8...?.I.1z5..4....!C.3W.....h.=...(F.=.......  ...../.p....".. >..>:..8.._..[. ..3&.|...6..#.i......e..JP.q..r3.DD=.GYh.M.L.....`..(<.RFBS8"{.Rp.._...qB).. ....)3:...#.=.?.].n..]\.D.&f8...kM......y
+.*..E#.1...#..9^3.Z..k.)6...^..|7>....Z.,<........B\..U.:X..+m.H.cP......Du...;..{.....ql(..z."......dp.fR...'s.eBQ..........-.R}...........$}_^^.qN..9~!.#.X.j.E.      ...i...~...60...7G6..N...I_..D.l.....dd.....7.:../~.M....ZN......f......o.R:.%.Wl}...\P..).y.e.#.......`..0.g...x...;..|..*@......`.!   .....I._........ .<........2..(EFw......s.LZ>.q..%.i.XS.....^....-8...q...........;......A....+ .......I.q.0......6).D.. or.k.ZQ...P-d..09_Ef   J.G}........>,........A,......X..H..S..C.GiOW.A.G.8`.{..
+.^...2.|.k..<.c...B..i...@..LF...2..H...b....^..Sj.Wecd.....Z2mJ.b....t.6..{....L^7.T!..s.....9....3..Oe..S.x.G..b....rK....r..
+H..F...x8F..v.=vQ...V.n.S5.     ..$d..\.ZA0.....dL.&..... ...wT^.........G....R.-y...h...2....#...QB.7.
+d..C..z.D.(..#<.$......ly..N{....b7+.2.gZA...S.K.r.?lm...<......zSq.h..Am87P.hN.R5.U..B%b:H.i$.1....-.{....&..5-7..P.J..mZ.....f...R.V...-&.|....q.a.'..p......x
+.....s.X|....g...]....LF.e..$.NW........@....].!.....m..%33....0...........|.......<......@.W..F......J..~....)w...I.]k.?...e)?.idn.VY.....A!b>..x...3..K.....u..H.i[
+... .s...h@....P.*....U%..v\%....|.........R.v...%.     .e...:.I...m9.....      ...b....%.;.1...g?)....@..7.....N.&(.$u .}...u.W.jL%:U)..o.....ty...#,c..*      .'.A.....D.......+.U].......d.D`.@.....4P0Y|!bd_[_..M....`&N^....,S}Ch  ..A7...5<-..f..R        ...d.#.A.V.d.....~@..?.d.n....I...      ......8..e......[@`+R....f....Zfn..c_..%....j\%..x..?.5[G\...x.7.....X.b...D.9.u....b.:.@.!.6.....}Z..oU._....*d.
+T....#..+.L.........Al6w_.
+.E.m...{...hx.f.u/....!...J.\s..#...4..!.g1.......      ..a.........hN.......#..
+b:.>@.......6....Xr.|   ...d.RQ..q:z.4..%.j,f...=.;./..e!uVTu.*c.......9.....Pyh..X.....75.rx.Y..a5.x.4....`...jW.B0.....Kq...Bi..KW^qH".d\.x>5.}<......r..0.{.8.z.C..b..S^....8a.g..P....:.. ....G..+U..q6.dnH..&.Oqn.t3o.M..^.}..j!<...9P.=.....A....f68....../..Z.... .U).pBLV...A...c.t......
+........V .;_...Fl..&.._.......g.].fmT .5#i.....@..{^..
+21:18:57.851011 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 3748:6668, ack 1, win 501, length 2920
+E.....@.@....z'cc.n.........z
+Z.P....F..}...*..........RDq...H.~.......{.X.^!.....a>..3=.t..8..B....dl.|....< ..\./..k2.fA4j....Vq..d.`..!{G5..
+*.O5..4:GxB...'..Z+*5s.T.U.o.W._[`...|.. ....{..R..7CB
+ .<YR..}...........E.r3t..Lf...x ........~.Fw..A^7.gW....x..{....@........ .
+.kD...uL(.mQ........sT.RgO...Y.R....../..       a|i..;.....WHu..-.Q ..* EN`.....]...._rloXhT.D...!     %ac...|.sC.'...".q..!...k...........J....:..."...b....$D...y2..2...J.(t#.\M.N.~.;.l....|J.YKS|!v..........IY.t..a....w.P.E...c.3.......[....*...u....3^
+9..-........S.N...Eq.|_ya.!.../...rK...X.z....A.r..:(P..5E..'.{...?..R7aH.A...5.v.p.cj..[..QDS.a.+     ......go&.9.OG......9..*..h.G...}QuY-vm45i.N.|..v]...y...,$3.b....k_.....e..o.L0..T.Y|w.wm.`...g..../.P.O.."b. F...._fI.I.{.zD.0.cK.;.....l.....Q.|..q.G.Hg......e(,.k=-Xi<..U..n.$..'.2I..5.a5/f..K...3.=.0.......
+N._.."..W.J... A.r.....;.B....Xx..J5E..Qm...s.b;a..8..uAA.B*r2.u|...|6D-.....k...7.7.zaole.....-....(.t.s...jx...A9..tu!..S..
+...J.......!....W..~.._.2.>.DL.<*.K.^XD.I.f....3..G..v..;<la....t.f{.l...qz..C1.O .........7......r......F.n....6V^je......-..WbX...&.E.....iK.{.kD.......n-..+.........|.g...b..=q7._..tie.$.Y~..$.[G1..B.4.....G!K.....j1.....d.v;.F..L6x......T...V..)J.....?..c..,.. *Rm.$...q.
+.y..J.J....f..)7.......h.........a..Q.!$.Qnm16V..U.......8.._.=..I.$..3C,%2D=v.....K...[.m..++....9....".wt...........-.r.......{.*7..v...C'.~...m..Fp..3`.zP"{....36.....u...0.UW.3..k...}dJ.3m....I.H).3h....Bq..X.phv.z.....Q...3f.q.`Bhb..b#..aV9gr?.R ...u..H./....E..,..=.....*E..2WL..0..J....3....yRp..-....e..[.....Hr..>...okr.O>=.JS.....3W7#{.W.
+...n~...F..@K..?.c*8.....k.3l......8.J.Q#....>i...z...e*-.i...O..I5M.........1I.z..0k....j.
+..      O.Q..(..        s{F.B....|..G...J5
+S..\..O'..B....v..:.........p...%.....T.j.......{..FA..>..qx@.z.5............T....rr.L..gT)F".i..J.5.a...W/@..e....qX..F.Vp......>.........|....y.....k.Yp......-.............*........p.......C+s.B.....x.....N.A.#;s: ........."....,.../.<k.$r.yUn..
+v       p..7/.../..d\.Z%...'.....}...7\.k.Vwn...5.....r..%....i.....gUS...sr....}........_...<0~A..M9h.....".{4...0.[........
+.......v..S`..5..s..4.........w.k.:..y:.U......(>.J_.9.S....L/.N.CJ........-...)......}.....la...&
+.v.....5..q.r!.N`.*..z..g..z..M.... O..0.7.%.....g..>N..........1...Lp..^d...........'<t...._.^._....4J..O....k..D8akM.&e. ..Qa....F0I.../.....!l.>9..({.(
+.....}...(....5.8..~..<V...z.Eu.a.Z..b...]2..j.j..(.*...O.....r.MGE..E.).......wv........SjWQM...c.{T.u..$a.....$...d[D.~..w.=......Y...Y......Z..T.lJ.c.......-.cu.Y.0].3mH..m.h$.j
+.v..x%*B.Q....'.*5.....J.....*...D.g#..V.b..ql....s}W.Na..8V.!>..X....]7....Y.U...X%......~.|3....D    .\#E.3......1.Q.G...#8..-.6..<&^[.*..=.EJ..*C.7..+F.\x.3R.......U3..N"f..(47t`.]~._...}.z....V.BL..Wy/Dr.8.....y.B4.Q..f}..<<...........|I..u........R._....&.J._..\.7.. .C.R....{..#2...dW...G-.....S<>......\.c...}.9.F.       ....M.(n...........G.m.$bm.n#~.S............v.Nui....w..7=x./g]Bm......Y/..t.z..1Vh.:v.778..$..~..1k....n..c.....u....8H<l..I......E
+21:18:57.933168 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [.], seq 6668:8128, ack 1, win 501, length 1460
+E.....@.@....z'cc.n.........z
+Z.P.......\...0kV......C..j.a/.,?{.df............u....\P.f..U.R"0l6i.H2...w.../.Q.O..A*..b>4)..t..~..'p......SS......Na~v...Tx.Cfv....0.o......SnS.1.w"...F}...f......"..R*..2..=...x.J.p......4r.......:.7...m.!U........{..c....).G...`^.....J..&.L....d....Lr5.....S.. X.*.......)ar.`,VM..<.tx.`.../...Qw..e.qS.T.....r.0.......gZ.(.f.?.$l........|..9...Xt.       ..Lg..|.s6...VF...0.k,u....u.]Z...kT..[.0.w.v.{..j'N.g,..\C....._....r.U.b.....y...t.s.K........9.BeQ..p.....T.B..A........8.v.."...`...5.K.>........Fe.6.
+.>=. ..... F\.\.v^m..E.....`.=j.(w.#..K...Ye>.1.$.-..g.."....4.....0..z.g.%.t.......E).r..1......$P.Ou.."....*.H{
+.o.*.w-..+.".I..v.&6..+.NK....L;.E..=]...q.\.M.3.5...Y..3N.......nb.~....\.........W..  t...K^b ^..>.j.=[[l...p<.*F....C6.n#...A...jI........../w...XO?]....^+?}e......M.. ..xi.4.7...=f..~.'N.....6(}..m)(?.'1BP."\..........q4V._....R......?q.T.. b...e......*.p.5(h...WS..k.Y......m...S..]..wp.%h.X........q.&.-.N...=X.....X&!+._..u..e.f.Q......h..xR;......f.U.i.u)...QR.=..B.#h...#J..a...G.......e....O.*A..W....Y?.*[O......]'.........*.U....7O.zJ....i.A>..j..-........s....$?9."A....l.!.
+.o.
+...^.CP.....I...:.%f+......p.?.."00.3....Y.[..........<9.%.......N..1?..\.W.wG/.].}}....+.....).5...aY.q.n.; .Xq...... ...0..r"..\.... ...|..W.....X..?.B!...<Ds.....H.X.V5..yxf.....:.?]..T..R.E.|.v.....P...d..o...4?..D....AH..f.>b..7.,.......;,.k..N.G<_.^.m9.@.~...f.M.....M..&.@.sp..:.q..8.....:|...3..)....y\.i.BG.b....<e....}Ps....+r........8..{....J@K.
+21:18:57.988516 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [P.], seq 1:37, ack 108, win 510, length 36
+^CE..L7.@.y.IPc.n..z'c....z
+Z.....P.......4.a.?........~m....S%g..}H..@..SU...
+
+41 packets captured
+44 packets received by filter
+3 packets dropped by kernel

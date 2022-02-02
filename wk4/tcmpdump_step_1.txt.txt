@@ -1,0 +1,160 @@
+1. Capture Packets from Specific Interface
+# tcpdump -i eth0
+
+root@comp3134-winter-2022-intro-to-cyber-security:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+21:13:11.731766 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 2948456077:2948456185, ack 2047479933, win 501, length 108
+21:13:11.731950 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 108:144, ack 1, win 501, length 36
+21:13:11.732151 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 144:252, ack 1, win 501, length 108
+21:13:11.732288 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 252:288, ack 1, win 501, length 36
+21:13:11.734073 IP comp3134-winter-2022-intro-to-cyber-security.46797 > 67.207.67.3.domain: 12307+ [1au] PTR? 234.110.252.99.in-addr.arpa. (56)
+21:13:11.734310 IP comp3134-winter-2022-intro-to-cyber-security.42650 > 67.207.67.3.domain: 59067+ [1au] PTR? 234.110.252.99.in-addr.arpa. (56)
+21:13:11.734362 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.46797: 12307 1/0/1 PTR cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com. (125)
+21:13:11.734710 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.42650: 59067 1/0/1 PTR cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com. (125)
+21:13:11.734752 IP comp3134-winter-2022-intro-to-cyber-security > 67.207.67.3: ICMP comp3134-winter-2022-intro-to-cyber-security udp port 42650 unreachable, length 161
+21:13:11.735651 IP comp3134-winter-2022-intro-to-cyber-security.40875 > 67.207.67.3.domain: 16710+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+21:13:11.735845 IP comp3134-winter-2022-intro-to-cyber-security.35763 > 67.207.67.3.domain: 12449+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+21:13:11.735889 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.40875: 16710 NXDomain 0/1/1 (122)
+21:13:11.736061 IP comp3134-winter-2022-intro-to-cyber-security.58900 > 67.207.67.3.domain: 31500+ [1au] PTR? 99.39.122.134.in-addr.arpa. (55)
+21:13:11.736099 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.35763: 12449 NXDomain 0/1/1 (122)
+21:13:11.736301 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.58900: 31500 NXDomain 0/1/1 (122)
+21:13:11.736425 IP comp3134-winter-2022-intro-to-cyber-security.40875 > 67.207.67.3.domain: 16710+ PTR? 99.39.122.134.in-addr.arpa. (44)
+21:13:11.736579 IP comp3134-winter-2022-intro-to-cyber-security.35763 > 67.207.67.3.domain: 12449+ PTR? 99.39.122.134.in-addr.arpa. (44)
+21:13:11.736617 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.40875: 16710 NXDomain 0/1/0 (111)
+21:13:11.736758 IP comp3134-winter-2022-intro-to-cyber-security.58900 > 67.207.67.3.domain: 31500+ PTR? 99.39.122.134.in-addr.arpa. (44)
+21:13:11.736794 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.35763: 12449 NXDomain 0/1/0 (111)
+21:13:11.736969 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.58900: 31500 NXDomain 0/1/0 (111)
+21:13:11.738246 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 288:532, ack 1, win 501, length 244
+21:13:11.738415 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 532:568, ack 1, win 501, length 36
+21:13:11.738732 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 568:788, ack 1, win 501, length 220
+21:13:11.738888 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 788:824, ack 1, win 501, length 36
+21:13:11.739075 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 824:1044, ack 1, win 501, length 220
+21:13:11.740213 IP comp3134-winter-2022-intro-to-cyber-security.34576 > 67.207.67.3.domain: 53002+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+21:13:11.740415 IP comp3134-winter-2022-intro-to-cyber-security.59417 > 67.207.67.3.domain: 43521+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+21:13:11.740452 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.34576: 53002 NXDomain 0/1/1 (120)
+21:13:11.740626 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.59417: 43521 NXDomain 0/1/1 (120)
+21:13:11.740710 IP comp3134-winter-2022-intro-to-cyber-security.40024 > 67.207.67.3.domain: 44730+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+21:13:11.740993 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.40024: 44730 NXDomain 0/1/1 (120)
+21:13:11.741196 IP comp3134-winter-2022-intro-to-cyber-security.34576 > 67.207.67.3.domain: 53002+ PTR? 3.67.207.67.in-addr.arpa. (42)
+21:13:11.741358 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.34576: 53002 NXDomain 0/1/0 (109)
+21:13:11.741402 IP comp3134-winter-2022-intro-to-cyber-security.59417 > 67.207.67.3.domain: 43521+ PTR? 3.67.207.67.in-addr.arpa. (42)
+21:13:11.741569 IP 67.207.67.3.domain > comp3134-winter-2022-intro-to-cyber-security.59417: 43521 NXDomain 0/1/0 (109)
+21:13:11.744754 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 288, win 510, length 0
+21:13:11.744825 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 1044:3964, ack 1, win 501, length 2920
+21:13:11.744909 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 3964:4284, ack 1, win 501, length 320
+21:13:11.744997 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4284:4320, ack 1, win 501, length 36
+21:13:11.745261 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4320:4492, ack 1, win 501, length 172
+21:13:11.745413 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4492:4528, ack 1, win 501, length 36
+21:13:11.745609 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4528:4684, ack 1, win 501, length 156
+21:13:11.745761 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4684:4720, ack 1, win 501, length 36
+21:13:11.745924 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4720:4876, ack 1, win 501, length 156
+21:13:11.746041 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4876:4912, ack 1, win 501, length 36
+21:13:11.758843 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 1044, win 513, length 0
+21:13:11.758844 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 4684, win 513, length 0
+21:13:11.758962 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 4912:7832, ack 1, win 501, length 2920
+21:13:11.759012 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 7832:10752, ack 1, win 501, length 2920
+21:13:11.759113 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 10752:10768, ack 1, win 501, length 16
+21:13:11.759360 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 10768:10980, ack 1, win 501, length 212
+21:13:11.759512 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 10980:11016, ack 1, win 501, length 36
+21:13:11.759697 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11016:11228, ack 1, win 501, length 212
+21:13:11.759836 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11228:11264, ack 1, win 501, length 36
+21:13:11.759994 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11264:11492, ack 1, win 501, length 228
+21:13:11.760141 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11492:11528, ack 1, win 501, length 36
+21:13:11.760332 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11528:11756, ack 1, win 501, length 228
+21:13:11.760524 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11756:11984, ack 1, win 501, length 228
+21:13:11.760775 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 11984:12588, ack 1, win 501, length 604
+21:13:11.761040 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 12588:13384, ack 1, win 501, length 796
+21:13:11.761348 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 13384:13996, ack 1, win 501, length 612
+21:13:11.761562 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 13996:14224, ack 1, win 501, length 228
+21:13:11.761788 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 14224:14452, ack 1, win 501, length 228
+21:13:11.762008 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 14452:14680, ack 1, win 501, length 228
+21:13:11.762218 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 14680:14908, ack 1, win 501, length 228
+21:13:11.762429 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 14908:15136, ack 1, win 501, length 228
+21:13:11.762704 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 15136:15364, ack 1, win 501, length 228
+21:13:11.762916 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 15364:15592, ack 1, win 501, length 228
+21:13:11.763105 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 15592:15820, ack 1, win 501, length 228
+21:13:11.765047 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 4912, win 512, length 0
+21:13:11.765113 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 15820:16048, ack 1, win 501, length 228
+21:13:11.765405 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 16048:16452, ack 1, win 501, length 404
+21:13:11.765614 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 16452:16680, ack 1, win 501, length 228
+21:13:11.765806 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 16680:16908, ack 1, win 501, length 228
+21:13:11.766009 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 16908:17136, ack 1, win 501, length 228
+21:13:11.766186 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 17136:17364, ack 1, win 501, length 228
+21:13:11.774752 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 12588, win 513, length 0
+21:13:11.774838 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 17364:17592, ack 1, win 501, length 228
+21:13:11.775162 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 17592:17996, ack 1, win 501, length 404
+21:13:11.775339 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 17996:18224, ack 1, win 501, length 228
+21:13:11.775504 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 18224:18452, ack 1, win 501, length 228
+21:13:11.775695 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 18452:18680, ack 1, win 501, length 228
+21:13:11.775862 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 18680:18908, ack 1, win 501, length 228
+21:13:11.776027 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 18908:19136, ack 1, win 501, length 228
+21:13:11.776176 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 19136:19364, ack 1, win 501, length 228
+21:13:11.776302 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 19364:19592, ack 1, win 501, length 228
+21:13:11.776548 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 19592:19820, ack 1, win 501, length 228
+21:13:11.776692 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 19820:20048, ack 1, win 501, length 228
+21:13:11.776869 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 20048:20276, ack 1, win 501, length 228
+21:13:11.777024 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 20276:20504, ack 1, win 501, length 228
+21:13:11.777211 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 20504:20732, ack 1, win 501, length 228
+21:13:11.777387 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 20732:20960, ack 1, win 501, length 228
+21:13:11.777614 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 20960:21188, ack 1, win 501, length 228
+21:13:11.777850 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 21188:21416, ack 1, win 501, length 228
+21:13:11.777990 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 21416:21644, ack 1, win 501, length 228
+21:13:11.778134 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 21644:21872, ack 1, win 501, length 228
+21:13:11.778324 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 21872:22100, ack 1, win 501, length 228
+21:13:11.778457 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 22100:22328, ack 1, win 501, length 228
+21:13:11.778656 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 22328:22556, ack 1, win 501, length 228
+21:13:11.778866 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 22556:22784, ack 1, win 501, length 228
+21:13:11.779025 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 22784:23012, ack 1, win 501, length 228
+21:13:11.779195 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 23012:23240, ack 1, win 501, length 228
+21:13:11.779339 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 23240:23468, ack 1, win 501, length 228
+21:13:11.779477 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 23468:23696, ack 1, win 501, length 228
+21:13:11.779615 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 23696:23924, ack 1, win 501, length 228
+21:13:11.780839 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 15820, win 513, length 0
+21:13:11.780840 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 17364, win 513, length 0
+21:13:11.780906 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 23924:24152, ack 1, win 501, length 228
+21:13:11.781251 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 24152:24724, ack 1, win 501, length 572
+21:13:11.781388 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 24724:24952, ack 1, win 501, length 228
+21:13:11.781511 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 24952:25180, ack 1, win 501, length 228
+21:13:11.781651 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 25180:25408, ack 1, win 501, length 228
+21:13:11.781782 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 25408:25636, ack 1, win 501, length 228
+21:13:11.781906 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 25636:25864, ack 1, win 501, length 228
+21:13:11.782024 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 25864:26092, ack 1, win 501, length 228
+21:13:11.782146 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 26092:26320, ack 1, win 501, length 228
+21:13:11.782266 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 26320:26548, ack 1, win 501, length 228
+21:13:11.782416 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 26548:26776, ack 1, win 501, length 228
+21:13:11.782579 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 26776:27004, ack 1, win 501, length 228
+21:13:11.782704 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 27004:27232, ack 1, win 501, length 228
+21:13:11.782834 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 27232:27460, ack 1, win 501, length 228
+21:13:11.782954 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 27460:27688, ack 1, win 501, length 228
+21:13:11.783075 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 27688:27916, ack 1, win 501, length 228
+21:13:11.783192 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 27916:28144, ack 1, win 501, length 228
+21:13:11.783321 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 28144:28372, ack 1, win 501, length 228
+21:13:11.783447 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 28372:28600, ack 1, win 501, length 228
+21:13:11.783583 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 28600:28828, ack 1, win 501, length 228
+21:13:11.783768 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 28828:29056, ack 1, win 501, length 228
+21:13:11.783929 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 29056:29284, ack 1, win 501, length 228
+21:13:11.784079 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 29284:29512, ack 1, win 501, length 228
+21:13:11.784248 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 29512:29740, ack 1, win 501, length 228
+21:13:11.784410 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 29740:29968, ack 1, win 501, length 228
+21:13:11.784558 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 29968:30196, ack 1, win 501, length 228
+21:13:11.784707 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 30196:30424, ack 1, win 501, length 228
+21:13:11.784853 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 30424:30652, ack 1, win 501, length 228
+21:13:11.785003 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 30652:30880, ack 1, win 501, length 228
+21:13:11.785200 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 30880:31108, ack 1, win 501, length 228
+21:13:11.785369 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 31108:31336, ack 1, win 501, length 228
+21:13:11.785512 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 31336:31564, ack 1, win 501, length 228
+21:13:11.788825 IP cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [.], ack 18452, win 509, length 0
+21:13:11.788894 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 31564:31792, ack 1, win 501, length 228
+21:13:11.789296 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 31792:32196, ack 1, win 501, length 404
+21:13:11.789501 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 32196:32424, ack 1, win 501, length 228
+21:13:11.789646 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 32424:32652, ack 1, win 501, length 228
+21:13:11.789794 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 32652:32880, ack 1, win 501, length 228
+21:13:11.790023 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 32880:33108, ack 1, win 501, length 228
+21:13:11.790256 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 33108:33336, ack 1, win 501, length 228
+21:13:11.790463 IP comp3134-winter-2022-intro-to-cyber-security.ssh > cpe688f2e1ca513-cm688f2e1ca510.cpe.net.cable.rogers.com.51482: Flags [P.], seq 33336:33564, ack 1, win 501, length 228
+^C21:13:11.793229 IP 112.85.42.229.46714 > comp3134-winter-2022-intro-to-cyber-security.ssh: Flags [S], seq 590807555, win 29200, options [mss 1460,sackOK,TS val 9986481 ecr 0,nop,wscale 7], length 0
+
+150 packets captured
+177 packets received by filter
+2 packets dropped by kernel

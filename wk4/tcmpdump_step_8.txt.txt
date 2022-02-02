@@ -1,0 +1,24 @@
+8. Capture IP Address Packets
+# tcpdump -n -i eth0
+
+root@comp3134-winter-2022-intro-to-cyber-security:~# tcpdump -n -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+21:31:42.993652 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 2982503429:2982503537, ack 2047522985, win 501, length 108
+21:31:42.993767 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 108:144, ack 1, win 501, length 36
+21:31:42.993872 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 144:252, ack 1, win 501, length 108
+21:31:42.993952 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 252:288, ack 1, win 501, length 36
+21:31:42.994183 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 288:460, ack 1, win 501, length 172
+21:31:42.994425 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 460:496, ack 1, win 501, length 36
+21:31:42.994565 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 496:644, ack 1, win 501, length 148
+21:31:42.994655 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 644:680, ack 1, win 501, length 36
+21:31:42.994758 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 680:828, ack 1, win 501, length 148
+21:31:43.013007 IP 99.252.110.234.51482 > 134.122.39.99.22: Flags [.], ack 108, win 4100, length 0
+21:31:43.013091 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 828:1968, ack 1, win 501, length 1140
+21:31:43.013334 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 1968:2100, ack 1, win 501, length 132
+21:31:43.013428 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 2100:2136, ack 1, win 501, length 36
+21:31:43.013537 IP 134.122.39.99.22 > 99.252.110.234.51482: Flags [P.], seq 2136:2284, ack 1, win 501, length 148
+^C
+14 packets captured
+15 packets received by filter
+0 packets dropped by kernel
