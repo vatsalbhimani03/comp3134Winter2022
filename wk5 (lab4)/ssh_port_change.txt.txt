@@ -1,0 +1,5 @@
+Step 5) - sudo ufw allow 2222/tcp
+Step 6) - service sshd restart
+Step 7) - ssh root@134.122.39.99 -p 2222
+Step 10) - sudo ufw delete 3
+			sudo ufw delete 5
