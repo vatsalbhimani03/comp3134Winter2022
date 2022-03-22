@@ -1,0 +1,14 @@
+1) Navigate to the form and type a valid English word. Write your observations.
+-> If I enter any valid word let's say Cake, then it will add "?q=Cake" to my route.
+
+2) Navigate to the URL and type an invalid English word after the `/browse/` section of the URL. 
+Write your observations
+-> If I enter invalid word and it's not in the dictionary then it will give me output "No result found for that word".
+
+3) Navigate to the form and type the following text: <script>alert(%27hello%27)</script> 
+Write your observations.
+-> If I enter above script tag to the form, then it will add "q=+<script>alert%28%2527hello%2527%29<%2Fscript>" to my route.
+
+4) Navigate to the URL and type the following text: <script>alert(%27hello%27)</script> 
+after the `term=` section of the URL. Write your observations.
+-> If I enter above script tag to dictionary URL after 'term=' section it just append backward in that route.
