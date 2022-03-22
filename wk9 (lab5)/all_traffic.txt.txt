@@ -1,0 +1,7 @@
+root@comp3134-winter-2022-intro-to-cyber-security:~# tcpdump -i any > all_traffic_20220318_0900.txt
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on any, link-type LINUX_SLL (Linux cooked v1), capture size 262144 bytes
+^C27338 packets captured
+27623 packets received by filter
+77 packets dropped by kernel
+
