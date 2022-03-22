@@ -1,0 +1,11 @@
+1)
+->
+Array
+(
+    [0] => .
+    [1] => ..
+    [2] => html
+)
+
+2) ->
+It displays array and content of www directory which is html

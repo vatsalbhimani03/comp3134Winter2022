@@ -1,0 +1,4 @@
+1)Should not be able to view files and folders before html directory
+-> I used basename() and see if it's current path then show files, otherwise don't
+2)Should not attempt to look at folders that do not exists
+-> I used file_exist() method which can look at path/folder either if it's exist or not.
