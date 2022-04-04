@@ -1,0 +1,2 @@
+
+The query string in url has confirmation session value.
