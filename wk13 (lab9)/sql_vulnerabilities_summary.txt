@@ -1,0 +1,17 @@
+1) Using the page getusers_1.php, type the following value into the form: Ben
+
+When quering the user ben, it should not be displayed because the status is not 1
+
+2) Using the page getusers_1.php, type the following value into the form
+
+After executing the "Ben'-- " query, it rendered the following query: SELECT * FROM users WHERE firstname='Ben'-- ' AND active=1, we can see that we can have access to Ben's username even thought the status is 0, that's the power of SQL injection.
+
+3) Using the page getusers_1.php, type the following value into the form
+
+Ben’ or 1=1 
+
+After executing this, there was a syntax error in the rendered query "SELECT * FROM users WHERE firstname='Ben' or 1=1 ' AND active=1", so the query couldn't be completed 
+
+This is the full error: Could not connect to the database :SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' AND active=1' at line 1
+
+I.- I decided to use prepared statements to avoid injections.
